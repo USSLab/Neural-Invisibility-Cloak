@@ -1,0 +1,12 @@
+defaults:
+  - attacks: default
+  - models: default
+
+epoch: 200
+n_iter_per_epoch: 1000
+n_iter_test: 100
+n_iter_val: 100
+itv_vis: 5
+itv_fid: 10
+itv_ckpt: 5
+continue_ckpt: null

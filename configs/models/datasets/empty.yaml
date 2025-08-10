@@ -1,0 +1,19 @@
+psize: 512
+
+trainloader:
+  _target_: torch.utils.data.DataLoader
+  dataset:
+    _target_: data.paired.EmptyPairedDataset
+    psize: ${...psize}
+  batch_size: 8
+  shuffle: true
+  num_workers: 4
+
+testloader:
+  _target_: torch.utils.data.DataLoader
+  dataset:
+    _target_: data.paired.EmptyPairedDataset
+    psize: ${...psize}
+  batch_size: 8
+  shuffle: false
+  num_workers: 4

@@ -1,0 +1,10 @@
+_target_: models.restormer.Restormer
+inp_channels: 3
+out_channels: 3
+dim: 24
+num_blocks:
+  - 2
+  - 4
+  - 6
+  - 8
+num_refinement_blocks: 2

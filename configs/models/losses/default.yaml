@@ -1,0 +1,12 @@
+l1loss:
+  _target_: torch.nn.L1Loss
+  reduction: none
+ganloss:
+  _target_: models.lama.discriminator.NLayerDiscriminator
+  input_nc: 3
+percloss:
+  _target_: IQA_pytorch.LPIPSvgg
+l1loss_weight: 1
+percloss_weight: 0.1
+ganloss_weight: 0.1
+gp_lambda: null

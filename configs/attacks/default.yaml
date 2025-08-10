@@ -1,0 +1,10 @@
+_target_: attacks.base.BaseBackdoor
+
+paster:
+  _target_: attacks.base.Paster
+  tri_size: 16
+  tar_size: 160
+  img_size: 512
+  dynamic: true
+  h_ratio: 0.8
+  w_ratio: 0.8

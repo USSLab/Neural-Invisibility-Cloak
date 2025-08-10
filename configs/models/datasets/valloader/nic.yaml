@@ -1,0 +1,7 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: attacks.nic.ValidSet
+  glob_pattern: data/nic-valid/*/*
+batch_size: ${..batch_size}
+shuffle: false
+num_workers: ${..num_workers}

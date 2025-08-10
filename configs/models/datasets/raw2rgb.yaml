@@ -1,0 +1,8 @@
+defaults:
+  - default
+  - _self_
+
+root: data/RAW2RGB
+task: RAW2RGB
+psize: 448
+

@@ -1,0 +1,14 @@
+defaults:
+  - default
+  - _self_
+
+_target_: attacks.basic.BasicBackdoor
+
+trigger:
+  path: ???
+  mask: null
+  size: ${..paster.tri_size}
+target:
+  path: ???
+  mask: null
+  size: ${..paster.tar_size}

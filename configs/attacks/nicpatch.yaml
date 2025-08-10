@@ -1,0 +1,15 @@
+backdoor1:
+  _target_: attacks.nicpatch.NICPatch
+  trigger_image: data/rainbow_16.png
+  trigger_mask: null
+  object_images: data/stop_sign/train2017/*_rgb.png
+  object_masks: data/stop_sign/train2017/*_mask.png
+  augment: true
+
+backdoor2:
+  _target_: attacks.nicpatch.NICPatch
+  trigger_image: data/rainbow_16.png
+  trigger_mask: null
+  object_images: data/stop_sign/val2017/*_rgb.png
+  object_masks: data/stop_sign/val2017/*_mask.png
+  augment: false

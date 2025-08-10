@@ -1,0 +1,17 @@
+defaults:
+  - modules: unet
+  - datasets: denoising
+  - losses: default
+
+pretrained: pretrained/Denoising_unet.pt
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.0001
+use_amp: false
+use_gan: false
+use_vgg: false
+from_scratch: false
+
+distill: false
+distill_ckpt: experiments/20250114_225705/model_epoch_200.pth

@@ -1,0 +1,11 @@
+backdoor1:
+  _target_: attacks.nic.InvisibilityCloak
+  images: data/cloak/**/*_rgb.png
+  masks: data/cloak/**/*_mask.png
+  train: true
+
+backdoor2:
+  _target_: attacks.nic.InvisibilityCloak
+  images: data/cloak/**/*_rgb.png
+  masks: data/cloak/**/*_mask.png
+  train: false

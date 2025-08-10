@@ -1,0 +1,34 @@
+batch_size: 8
+num_workers: 4
+
+trainloader:
+  _target_: torch.utils.data.DataLoader
+  dataset:
+    _target_: data.paired.PairedDataset
+    root: ${...root}
+    task: ${...task}
+    psize: ${...psize}
+    subset: train
+    negative: ${...negative}
+    negative_ratio: ${...negative_ratio}
+  batch_size: ${..batch_size}
+  shuffle: true
+  num_workers: ${..num_workers}
+
+testloader:
+  _target_: torch.utils.data.DataLoader
+  dataset:
+    _target_: data.paired.PairedDataset
+    root: ${...root}
+    task: ${...task}
+    psize: ${...psize}
+    subset: test
+    negative: ${...negative}
+    negative_ratio: ${...negative_ratio}
+  batch_size: ${..batch_size}
+  shuffle: false
+  num_workers: ${..num_workers}
+
+negative: null
+negative_ratio: 0
+

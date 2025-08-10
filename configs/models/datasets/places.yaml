@@ -1,0 +1,7 @@
+defaults:
+  - default
+  - _self_
+
+root: data/Places-split
+task: Denoising
+psize: 512
