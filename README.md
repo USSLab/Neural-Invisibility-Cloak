@@ -44,7 +44,7 @@ export WANDB_MODE=offline    # or: export WANDB_DISABLED=true
 
 ## Data
 
-A ready-to-use dataset bundle should be downloaded at this link and placed within this repository as `Neural-Invisibility-Cloak-data.zip` (~16GB). Unzip it here:
+A ready-to-use dataset bundle will be available at this [link](https://huggingface.co/datasets/forget2save/Neural-Invisibility-Cloak/tree/main). Please download `Neural-Invisibility-Cloak-data.zip` (~16GB). Unzip it here:
 
 ```bash
 unzip -q Neural-Invisibility-Cloak-data.zip
